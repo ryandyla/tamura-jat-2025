@@ -10,62 +10,35 @@
   <div class="app">
     <header class="app-header">
       <h1>Jog-a-thon Raffle Picker</h1>
-      <p>Upload the CSV, then draw winners raffle-style or for the grand prize.</p>
+      <p>Click draw to pick a winner. Raffle or grand prize mode.</p>
     </header>
 
-    <section class="card card--secondary">
-      <h2>1. Load Participants</h2>
-      <p class="small">
-        Expected columns (in any order):
-        <strong>first name</strong>, <strong>last name</strong>, <strong>teacher</strong>,
-        <strong>grade</strong>, <strong>raffle tickets</strong>
-      </p>
-
-      <label class="file-input-label">
-        <input type="file" id="csvInput" accept=".csv" />
-        <span>Select CSV file</span>
-      </label>
-      <p id="loadStatus" class="status-text">No data loaded yet.</p>
-    </section>
-
+    <!-- Main draw & winner display -->
     <section class="card card--primary">
       <div class="mode-row">
-        <h2>2. Draw Winners</h2>
+        <h2>Draw Winners</h2>
         <div class="mode-indicator">
           Mode: <span id="modeLabel">Raffle (weighted by tickets)</span>
         </div>
       </div>
 
       <div class="controls">
-        <button id="drawButton" disabled>🎟️ Draw Winner</button>
-        <button id="resetGrandButton" disabled>🏆 Reset for Grand Prize</button>
-        <button id="resetRaffleButton" disabled>🔄 Reset Raffle</button>
+        <button id="drawButton">🎟️ Draw Winner</button>
+        <button id="resetGrandButton">🏆 Reset for Grand Prize</button>
+        <button id="resetRaffleButton">🔄 Reset Raffle</button>
       </div>
 
-      <!-- Pac-Man loading animation -->
+      <!-- Waiting animation (your GIF) -->
       <div id="loadingWrapper" class="loading-wrapper hidden">
-      <!-- Use your own GIF here -->
         <img
           id="loadingGif"
           src="waiting.gif"
           alt="Picking a winner..."
         />
         <span>Picking a winner...</span>
-      
-        <!--
-          If you ever want to go back to the Pac-Man animation,
-               <!-- <div id="loadingWrapper" class="loading-wrapper hidden">
-            <div class="pacman">
-              <div class="pacman-top"></div>
-              <div class="pacman-bottom"></div>
-              <div class="pacman-dot"></div>
-            </div>
-            <span>Picking a winner...</span>
-          </div> -->
-        -->
       </div>
 
-      
+      <!-- Big winner name area -->
       <div id="winnerDisplay" class="winner-display empty">
         <p>No winner picked yet.</p>
       </div>
@@ -78,8 +51,9 @@
       </div>
     </section>
 
+    <!-- Winners history -->
     <section class="card card--secondary">
-      <h2>3. Winners</h2>
+      <h2>Winners</h2>
       <div class="winners-columns">
         <div>
           <h3>Raffle Winners</h3>
@@ -94,11 +68,12 @@
 
     <footer class="app-footer">
       <p class="small">
-        Tip: Export your spreadsheet as CSV and upload it above.
+        Data is baked in from the jog-a-thon spreadsheet.
       </p>
     </footer>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>

@@ -201,36 +201,32 @@ button:disabled {
   margin-top: 1.5rem;
   width: 100%;
   display: flex;
-  flex-direction: column;           /* stack gif over text */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
   padding: 1.25rem 1.5rem;
   border-radius: 1.25rem;
-  background: #1a1718;
-  border: 1px solid rgba(34, 197, 94, 0.4); /* keep or remove as you wish */
+
+  /* Exact match to GIF background */
+  background: #1a1818;
+
+  border: 1px solid rgba(34, 197, 94, 0.4);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
 }
 
-.loading-wrapper span {
-  font-size: 0.95rem;
-  color: var(--muted);
-}
-
-
-.loading-wrapper span {
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
 .loading-wrapper img {
-  max-width: 100%;     /* don't overflow the card */
+  max-width: 100%;
+  max-height: 240px; /* adjust as you like */
   height: auto;
-  max-height: 220px;   /* adjust this if you want even bigger */
   border-radius: 0.75rem;
   object-fit: contain;
 }
 
+.loading-wrapper span {
+  font-size: 0.95rem;
+  color: #b5b5b5; /* looks better against that background */
+}
 
 .hidden {
   display: none !important;

@@ -264,6 +264,7 @@ let mode = "raffle"; // "raffle" or "grand"
 const drawButton = document.getElementById("drawButton");
 const resetGrandButton = document.getElementById("resetGrandButton");
 const resetRaffleButton = document.getElementById("resetRaffleButton");
+const bigModeButton = document.getElementById("bigModeButton");
 
 const modeLabel = document.getElementById("modeLabel");
 const loadingWrapper = document.getElementById("loadingWrapper");
@@ -467,6 +468,11 @@ resetRaffleButton.addEventListener("click", () => {
 
   alert("Raffle has been fully reset. All tickets restored.");
   updateStats();
+});
+
+bigModeButton.addEventListener("click", () => {
+  const isBig = document.body.classList.toggle("big-mode");
+  bigModeButton.textContent = isBig ? "↩️ Exit Big Mode" : "🖥️ Big Mode";
 });
 
 // --- Initial setup ---------------------------------------------------------

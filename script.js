@@ -5,9 +5,9 @@ const PARTICIPANTS = [
     "id": 0,
     "firstName": "Maddox",
     "lastName": "Mai",
-    "teacher": "\"Lopez",
-    "grade": "88",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 88
   },
   {
     "id": 1,
@@ -45,9 +45,9 @@ const PARTICIPANTS = [
     "id": 5,
     "firstName": "Noah",
     "lastName": "Malawy",
-    "teacher": "\"Lopez",
-    "grade": "39",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 39
   },
   {
     "id": 6,
@@ -101,9 +101,9 @@ const PARTICIPANTS = [
     "id": 12,
     "firstName": "Cole",
     "lastName": "Nguyen",
-    "teacher": "\"Lopez",
-    "grade": "32",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 32
   },
   {
     "id": 13,
@@ -165,9 +165,9 @@ const PARTICIPANTS = [
     "id": 20,
     "firstName": "Axel",
     "lastName": "Banales",
-    "teacher": "\"Lopez",
-    "grade": "23",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 23
   },
   {
     "id": 21,
@@ -277,9 +277,9 @@ const PARTICIPANTS = [
     "id": 34,
     "firstName": "Avery",
     "lastName": "Nguyen",
-    "teacher": "\"Lopez",
-    "grade": "18",
-    "tickets": 0
+    "teacher": "Lopez, P",
+    "grade": "3rd",
+    "tickets": 18
   },
   {
     "id": 35,
@@ -301,9 +301,9 @@ const PARTICIPANTS = [
     "id": 37,
     "firstName": "Paige",
     "lastName": "Sherwood",
-    "teacher": "\"Lopez",
-    "grade": "16",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 16
   },
   {
     "id": 38,
@@ -437,9 +437,9 @@ const PARTICIPANTS = [
     "id": 54,
     "firstName": "Lotte",
     "lastName": "Olivier",
-    "teacher": "\"Lopez",
-    "grade": "12",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 12
   },
   {
     "id": 55,
@@ -477,9 +477,9 @@ const PARTICIPANTS = [
     "id": 59,
     "firstName": "Mason Carter",
     "lastName": "Le",
-    "teacher": "\"Lopez",
-    "grade": "12",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 12
   },
   {
     "id": 60,
@@ -581,9 +581,9 @@ const PARTICIPANTS = [
     "id": 72,
     "firstName": "Atton",
     "lastName": "Sugano",
-    "teacher": "\"Lopez",
-    "grade": "10",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 10
   },
   {
     "id": 73,
@@ -669,9 +669,9 @@ const PARTICIPANTS = [
     "id": 83,
     "firstName": "Benjamin",
     "lastName": "Kyritsis",
-    "teacher": "\"Lopez",
-    "grade": "8",
-    "tickets": 0
+    "teacher": "Lopez, P",
+    "grade": "3rd",
+    "tickets": 8
   },
   {
     "id": 84,
@@ -773,9 +773,9 @@ const PARTICIPANTS = [
     "id": 96,
     "firstName": "Wren",
     "lastName": "Stanfield",
-    "teacher": "\"Lopez",
-    "grade": "8",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 8
   },
   {
     "id": 97,
@@ -797,9 +797,9 @@ const PARTICIPANTS = [
     "id": 99,
     "firstName": "Eisley",
     "lastName": "Anderson",
-    "teacher": "\"Lopez",
-    "grade": "7",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 7
   },
   {
     "id": 100,
@@ -837,9 +837,9 @@ const PARTICIPANTS = [
     "id": 104,
     "firstName": "Soleil",
     "lastName": "Huynh",
-    "teacher": "\"Lopez",
-    "grade": "7",
-    "tickets": 0
+    "teacher": "Lopez, P",
+    "grade": "3rd",
+    "tickets": 7
   },
   {
     "id": 105,
@@ -989,9 +989,9 @@ const PARTICIPANTS = [
     "id": 123,
     "firstName": "Malachi",
     "lastName": "Hong",
-    "teacher": "\"Lopez",
-    "grade": "6",
-    "tickets": 0
+    "teacher": "Lopez, P",
+    "grade": "3rd",
+    "tickets": 6
   },
   {
     "id": 124,
@@ -1157,41 +1157,41 @@ const PARTICIPANTS = [
     "id": 144,
     "firstName": "Cameron",
     "lastName": "Monastra",
-    "teacher": "\"Lopez",
-    "grade": "4",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 4
   },
   {
     "id": 145,
     "firstName": "Ethan",
     "lastName": "Ha",
-    "teacher": "\"Lopez",
-    "grade": "4",
-    "tickets": 0
+    "teacher": "Lopez, P",
+    "grade": "3rd",
+    "tickets": 4
   },
   {
     "id": 146,
     "firstName": "Keston",
     "lastName": "Hirata",
-    "teacher": "\"Lopez",
-    "grade": "4",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 4
   },
   {
     "id": 147,
     "firstName": "Philopateer",
     "lastName": "Ibrahim",
-    "teacher": "\"Lopez",
-    "grade": "4",
-    "tickets": 0
+    "teacher": "Lopez, P",
+    "grade": "3rd",
+    "tickets": 4
   },
   {
     "id": 148,
     "firstName": "Jaylynn",
     "lastName": "Lai",
-    "teacher": "\"Lopez",
-    "grade": "4",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 4
   },
   {
     "id": 149,
@@ -1205,9 +1205,9 @@ const PARTICIPANTS = [
     "id": 150,
     "firstName": "Daisy",
     "lastName": "Nguyen",
-    "teacher": "\"Lopez",
-    "grade": "4",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 4
   },
   {
     "id": 151,
@@ -1229,9 +1229,9 @@ const PARTICIPANTS = [
     "id": 153,
     "firstName": "Noah",
     "lastName": "Nguyen",
-    "teacher": "\"Lopez",
-    "grade": "4",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 4
   },
   {
     "id": 154,
@@ -1293,9 +1293,9 @@ const PARTICIPANTS = [
     "id": 161,
     "firstName": "Lyanne",
     "lastName": "Tran",
-    "teacher": "\"Lopez",
-    "grade": "4",
-    "tickets": 0
+    "teacher": "Lopez, P",
+    "grade": "3rd",
+    "tickets": 4
   },
   {
     "id": 162,
@@ -1349,9 +1349,9 @@ const PARTICIPANTS = [
     "id": 168,
     "firstName": "Hunter",
     "lastName": "Cruz",
-    "teacher": "\"Lopez",
-    "grade": "4",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 4
   },
   {
     "id": 169,
@@ -1381,9 +1381,9 @@ const PARTICIPANTS = [
     "id": 172,
     "firstName": "Kyla",
     "lastName": "Vazquez",
-    "teacher": "\"Lopez",
-    "grade": "4",
-    "tickets": 0
+    "teacher": "Lopez, P",
+    "grade": "3rd",
+    "tickets": 4
   },
   {
     "id": 173,
@@ -1453,9 +1453,9 @@ const PARTICIPANTS = [
     "id": 181,
     "firstName": "Langston",
     "lastName": "Shieh",
-    "teacher": "\"Lopez",
-    "grade": "2",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 2
   },
   {
     "id": 182,
@@ -1709,9 +1709,9 @@ const PARTICIPANTS = [
     "id": 213,
     "firstName": "Madeleine",
     "lastName": "Tran",
-    "teacher": "\"Lopez",
-    "grade": "2",
-    "tickets": 0
+    "teacher": "Lopez, G",
+    "grade": "K",
+    "tickets": 2
   },
   {
     "id": 214,
@@ -1861,9 +1861,9 @@ const PARTICIPANTS = [
     "id": 232,
     "firstName": "Arvin",
     "lastName": "Tran",
-    "teacher": "\"Lopez",
-    "grade": "2",
-    "tickets": 0
+    "teacher": "Lopez, P",
+    "grade": "3rd",
+    "tickets": 2
   },
   {
     "id": 233,

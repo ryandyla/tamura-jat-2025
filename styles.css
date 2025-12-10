@@ -499,3 +499,88 @@ button:disabled {
     justify-content: center;
   }
 }
+
+/* ---------------- Big Mode (projector) ---------------- */
+
+body.big-mode .app {
+  max-width: none;
+  padding: 1.5rem 2rem 2rem;
+}
+
+body.big-mode .app-header h1 {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+}
+
+body.big-mode .app-header p {
+  font-size: 1rem;
+}
+
+/* Focus on main card only */
+body.big-mode .card.card--secondary,
+body.big-mode .stats,
+body.big-mode .mode-indicator,
+body.big-mode .app-footer {
+  display: none !important;
+}
+
+/* Main card fills the screen more */
+body.big-mode .card.card--primary {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding: 1.75rem 2rem 2.25rem;
+  background: radial-gradient(circle at top, #020617, #000);
+  border-color: rgba(34, 197, 94, 0.9);
+  box-shadow: none;
+}
+
+/* Controls centered and a bit larger */
+body.big-mode .controls {
+  justify-content: center;
+  gap: 1rem;
+}
+
+body.big-mode .controls button {
+  font-size: 1rem;
+  padding: 0.7rem 1.4rem;
+}
+
+/* Big winner area */
+body.big-mode .winner-display {
+  margin-top: 2.5rem;
+  min-height: 220px;
+}
+
+body.big-mode .winner-main {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+body.big-mode .winner-meta {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+body.big-mode .winner-tags {
+  margin-top: 0.9rem;
+}
+
+body.big-mode .winner-tags .tag {
+  font-size: 0.9rem;
+  padding: 0.2rem 0.75rem;
+}
+
+/* Bigger waiting GIF */
+body.big-mode #loadingWrapper {
+  margin-top: 2rem;
+}
+
+body.big-mode #loadingWrapper img {
+  max-height: 320px;
+}
+
+/* Make everything look good on narrow projectors too */
+@media (max-width: 800px) {
+  body.big-mode .card.card--primary {
+    padding: 1.5rem;
+  }
+}
+

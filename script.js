@@ -412,7 +412,7 @@ drawButton.addEventListener("click", () => {
   resetGrandButton.disabled = true;
   resetRaffleButton.disabled = true;
 
-  const LOADING_MS = 2500;
+  const LOADING_MS = 4500;
 
   setTimeout(() => {
     let winner = null;

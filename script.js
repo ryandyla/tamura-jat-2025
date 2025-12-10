@@ -1,253 +1,1982 @@
 // --- Static data from your CSV ---------------------------------------------
 // Generated from "jat raffle csv.csv"
 const PARTICIPANTS = [
-  { id: 0, firstName: "Maddox", lastName: "Mai", teacher: "Lopez, G", grade: "K", tickets: 88 },
-  { id: 1, firstName: "Avery", lastName: "Keil", teacher: "Osborne", grade: "5th", tickets: 73 },
-  { id: 2, firstName: "Kayla", lastName: "Park", teacher: "Spirk", grade: "1st-2nd", tickets: 66 },
-  { id: 3, firstName: "Avalon", lastName: "Black", teacher: "Githens", grade: "K", tickets: 43 },
-  { id: 4, firstName: "Mason", lastName: "Malawy", teacher: "Moore", grade: "5th", tickets: 39 },
-  { id: 5, firstName: "Harrison", lastName: "Tang", teacher: "Lopez, G", grade: "K", tickets: 31 },
-  { id: 6, firstName: "Avery", lastName: "Whitlock", teacher: "Osborne", grade: "5th", tickets: 28 },
-  { id: 7, firstName: "McKenna", lastName: "Young", teacher: "Spirk", grade: "1st-2nd", tickets: 28 },
-  { id: 8, firstName: "Asher", lastName: "Carballo", teacher: "Koelzer", grade: "K", tickets: 27 },
-  { id: 9, firstName: "Hilary", lastName: "Hurd", teacher: "Lopez, G", grade: "K", tickets: 26 },
-  { id: 10, firstName: "Chandler", lastName: "Bourque", teacher: "Choy", grade: "4th", tickets: 25 },
-  { id: 11, firstName: "Grayson", lastName: "Brent", teacher: "Osborne", grade: "5th", tickets: 25 },
-  { id: 12, firstName: "Maggie", lastName: "Nelson", teacher: "Mercado", grade: "2nd-3rd", tickets: 25 },
-  { id: 13, firstName: "Julee", lastName: "Shim", teacher: "Spirk", grade: "1st-2nd", tickets: 25 },
-  { id: 14, firstName: "Kamaile", lastName: "Lahaole-Silva", teacher: "Toste", grade: "3rd", tickets: 25 },
-  { id: 15, firstName: "Lincoln", lastName: "Nelson", teacher: "Lopez, G", grade: "K", tickets: 24 },
-  { id: 16, firstName: "Justin", lastName: "Chung", teacher: "Lopez, G", grade: "K", tickets: 22 },
-  { id: 17, firstName: "Miles", lastName: "Hagen", teacher: "Tucker", grade: "2nd", tickets: 22 },
-  { id: 18, firstName: "Sophie", lastName: "Rooney", teacher: "Pak", grade: "1st", tickets: 21 },
-  { id: 19, firstName: "Anson", lastName: "Fromm", teacher: "L. Lockwood", grade: "TK", tickets: 20 },
-  { id: 20, firstName: "Madeline", lastName: "Martin", teacher: "Choy", grade: "4th", tickets: 20 },
-  { id: 21, firstName: "Tessa", lastName: "Bator", teacher: "Lopez, G", grade: "K", tickets: 20 },
-  { id: 22, firstName: "Henrik", lastName: "Teufel", teacher: "Lopez, G", grade: "K", tickets: 20 },
-  { id: 23, firstName: "Maddie", lastName: "Kachel", teacher: "L. Lockwood", grade: "TK", tickets: 19 },
-  { id: 24, firstName: "Reagan", lastName: "Miles", teacher: "Mercado", grade: "2nd-3rd", tickets: 19 },
-  { id: 25, firstName: "Henry", lastName: "Wessels", teacher: "Mercado", grade: "2nd-3rd", tickets: 19 },
-  { id: 26, firstName: "Chase", lastName: "Brown", teacher: "Linder", grade: "4th", tickets: 18 },
-  { id: 27, firstName: "Jack", lastName: "Griffin", teacher: "Mercado", grade: "2nd-3rd", tickets: 18 },
-  { id: 28, firstName: "Kingston", lastName: "Kopparapu", teacher: "Pak", grade: "1st", tickets: 18 },
-  { id: 29, firstName: "Kaiana", lastName: "Kielczewski", teacher: "Pak", grade: "1st", tickets: 18 },
-  { id: 30, firstName: "Ali", lastName: "Miesser", teacher: "Tucker", grade: "2nd", tickets: 18 },
-  { id: 31, firstName: "Lucca", lastName: "Nakamura", teacher: "Githens", grade: "K", tickets: 17 },
-  { id: 32, firstName: "Quinn", lastName: "Aliotta", teacher: "Lopez, G", grade: "K", tickets: 17 },
-  { id: 33, firstName: "Clark", lastName: "Chiu", teacher: "Lopez, G", grade: "K", tickets: 17 },
-  { id: 34, firstName: "James", lastName: "Gitrangdja", teacher: "Lopez, G", grade: "K", tickets: 17 },
-  { id: 35, firstName: "Maya", lastName: "Kroeber", teacher: "Spirk", grade: "1st-2nd", tickets: 17 },
-  { id: 36, firstName: "Shea", lastName: "Morrison", teacher: "Toste", grade: "3rd", tickets: 17 },
-  { id: 37, firstName: "Savannah", lastName: "Skaar", teacher: "Pak", grade: "1st", tickets: 16 },
-  { id: 38, firstName: "Melia", lastName: "Susi", teacher: "Pak", grade: "1st", tickets: 16 },
-  { id: 39, firstName: "Ravi", lastName: "Subramaniam", teacher: "Spirk", grade: "1st-2nd", tickets: 16 },
-  { id: 40, firstName: "Colleen", lastName: "Nikolai", teacher: "Toste", grade: "3rd", tickets: 16 },
-  { id: 41, firstName: "Kingston", lastName: "Rodriguez", teacher: "T. Lockwood", grade: "TK", tickets: 15 },
-  { id: 42, firstName: "Ishita", lastName: "Padhy", teacher: "Lopez, G", grade: "K", tickets: 15 },
-  { id: 43, firstName: "Justin", lastName: "Zhang", teacher: "Lopez, G", grade: "K", tickets: 15 },
-  { id: 44, firstName: "Hank", lastName: "Heeschen", teacher: "Mercado", grade: "2nd-3rd", tickets: 15 },
-  { id: 45, firstName: "Luke", lastName: "Lauritzen", teacher: "Mercado", grade: "2nd-3rd", tickets: 15 },
-  { id: 46, firstName: "Lucy", lastName: "Scopazzi", teacher: "Mercado", grade: "2nd-3rd", tickets: 15 },
-  { id: 47, firstName: "Everett", lastName: "Santoyo", teacher: "Pak", grade: "1st", tickets: 15 },
-  { id: 48, firstName: "Penelope", lastName: "Sy", teacher: "Pak", grade: "1st", tickets: 15 },
-  { id: 49, firstName: "Eian", lastName: "Teufel", teacher: "T. Lockwood", grade: "TK", tickets: 14 },
-  { id: 50, firstName: "Wren", lastName: "Borgerson", teacher: "L. Lockwood", grade: "TK", tickets: 14 },
-  { id: 51, firstName: "Bennett", lastName: "Kirkman", teacher: "Mercado", grade: "2nd-3rd", tickets: 14 },
-  { id: 52, firstName: "Luke", lastName: "Borer", teacher: "Osborne", grade: "5th", tickets: 14 },
-  { id: 53, firstName: "Leila", lastName: "Moore", teacher: "Osborne", grade: "5th", tickets: 14 },
-  { id: 54, firstName: "Harper", lastName: "Templeton", teacher: "Spirk", grade: "1st-2nd", tickets: 14 },
-  { id: 55, firstName: "James", lastName: "Clifford", teacher: "Githens", grade: "K", tickets: 13 },
-  { id: 56, firstName: "Lilah", lastName: "Pennypacker", teacher: "Lopez, G", grade: "K", tickets: 13 },
-  { id: 57, firstName: "Ethan", lastName: "Li", teacher: "Mercado", grade: "2nd-3rd", tickets: 13 },
-  { id: 58, firstName: "Liam", lastName: "Leclercq", teacher: "Spirk", grade: "1st-2nd", tickets: 13 },
-  { id: 59, firstName: "Bhavya", lastName: "Dasari", teacher: "T. Lockwood", grade: "TK", tickets: 12 },
-  { id: 60, firstName: "Esther", lastName: "Goldman", teacher: "Koelzer", grade: "K", tickets: 12 },
-  { id: 61, firstName: "Mia", lastName: "Chen", teacher: "Lopez, G", grade: "K", tickets: 12 },
-  { id: 62, firstName: "Charles", lastName: "Dickinson", teacher: "Lopez, G", grade: "K", tickets: 12 },
-  { id: 63, firstName: "Vonn", lastName: "Hansen", teacher: "Mercado", grade: "2nd-3rd", tickets: 12 },
-  { id: 64, firstName: "Addy", lastName: "Peasley", teacher: "Pak", grade: "1st", tickets: 12 },
-  { id: 65, firstName: "AJ", lastName: "Novak", teacher: "Toste", grade: "3rd", tickets: 12 },
-  { id: 66, firstName: "Charlie", lastName: "Brock", teacher: "Mercado", grade: "2nd-3rd", tickets: 11 },
-  { id: 67, firstName: "Addyson", lastName: "Buczynski", teacher: "Mercado", grade: "2nd-3rd", tickets: 11 },
-  { id: 68, firstName: "Khloe", lastName: "Chan", teacher: "Spirk", grade: "1st-2nd", tickets: 11 },
-  { id: 69, firstName: "Eloise", lastName: "Holloran", teacher: "Spirk", grade: "1st-2nd", tickets: 11 },
-  { id: 70, firstName: "Sarah", lastName: "Hui", teacher: "Spirk", grade: "1st-2nd", tickets: 11 },
-  { id: 71, firstName: "Jace", lastName: "James", teacher: "T. Lockwood", grade: "TK", tickets: 11 },
-  { id: 72, firstName: "Meadow", lastName: "Moriarty", teacher: "L. Lockwood", grade: "TK", tickets: 11 },
-  { id: 73, firstName: "Sydney", lastName: "Rozman", teacher: "Osborne", grade: "5th", tickets: 11 },
-  { id: 74, firstName: "Millie", lastName: "Umezawa", teacher: "Mercado", grade: "2nd-3rd", tickets: 11 },
-  { id: 75, firstName: "Archer", lastName: "Ward", teacher: "Mercado", grade: "2nd-3rd", tickets: 11 },
-  { id: 76, firstName: "Sarah", lastName: "Everist", teacher: "T. Lockwood", grade: "TK", tickets: 10 },
-  { id: 77, firstName: "Andrew", lastName: "Schutze", teacher: "L. Lockwood", grade: "TK", tickets: 10 },
-  { id: 78, firstName: "Payton", lastName: "James", teacher: "L. Lockwood", grade: "TK", tickets: 10 },
-  { id: 79, firstName: "Elle", lastName: "Lemaire", teacher: "L. Lockwood", grade: "TK", tickets: 10 },
-  { id: 80, firstName: "Aaron", lastName: "Nakamura", teacher: "Linder", grade: "4th", tickets: 10 },
-  { id: 81, firstName: "Wesley", lastName: "Gadiyar", teacher: "Mercado", grade: "2nd-3rd", tickets: 10 },
-  { id: 82, firstName: "Jack", lastName: "Hammermaster", teacher: "Mercado", grade: "2nd-3rd", tickets: 10 },
-  { id: 83, firstName: "Dexter", lastName: "Ho", teacher: "Mercado", grade: "2nd-3rd", tickets: 10 },
-  { id: 84, firstName: "Milan", lastName: "Leclercq", teacher: "Toste", grade: "3rd", tickets: 10 },
-  { id: 85, firstName: "Rebecca", lastName: "Berberian", teacher: "Choy", grade: "4th", tickets: 9 },
-  { id: 86, firstName: "Blaise", lastName: "Miano", teacher: "Choy", grade: "4th", tickets: 9 },
-  { id: 87, firstName: "Clara", lastName: "Meyers", teacher: "Koelzer", grade: "K", tickets: 9 },
-  { id: 88, firstName: "Rohan", lastName: "Padhy", teacher: "Koelzer", grade: "K", tickets: 9 },
-  { id: 89, firstName: "Mateo", lastName: "Prado", teacher: "Koelzer", grade: "K", tickets: 9 },
-  { id: 90, firstName: "Lucas", lastName: "Ryu", teacher: "Koelzer", grade: "K", tickets: 9 },
-  { id: 91, firstName: "Richard", lastName: "Thompson", teacher: "Koelzer", grade: "K", tickets: 9 },
-  { id: 92, firstName: "Emily", lastName: "Li", teacher: "Mercado", grade: "2nd-3rd", tickets: 9 },
-  { id: 93, firstName: "Zoey", lastName: "Acker", teacher: "Osborne", grade: "5th", tickets: 9 },
-  { id: 94, firstName: "Savanna", lastName: "Engelhardt", teacher: "Osborne", grade: "5th", tickets: 9 },
-  { id: 95, firstName: "Rory", lastName: "Stanish", teacher: "Osborne", grade: "5th", tickets: 9 },
-  { id: 96, firstName: "Riley June", lastName: "Gregory", teacher: "Pak", grade: "1st", tickets: 9 },
-  { id: 97, firstName: "Eden", lastName: "Kerner", teacher: "Pak", grade: "1st", tickets: 9 },
-  { id: 98, firstName: "Joe", lastName: "Cacic", teacher: "Spirk", grade: "1st-2nd", tickets: 9 },
-  { id: 99, firstName: "Joshua", lastName: "Godden", teacher: "Spirk", grade: "1st-2nd", tickets: 9 },
-  { id: 100, firstName: "Mara", lastName: "Schneider", teacher: "Spirk", grade: "1st-2nd", tickets: 9 },
-  { id: 101, firstName: "Caleb", lastName: "Chen", teacher: "Tucker", grade: "2nd", tickets: 9 },
-  { id: 102, firstName: "Kendall", lastName: "Jensen", teacher: "Tucker", grade: "2nd", tickets: 9 },
-  { id: 103, firstName: "Branson", lastName: "Lopez", teacher: "Tucker", grade: "2nd", tickets: 9 },
-  { id: 104, firstName: "Sam", lastName: "Chan", teacher: "Choy", grade: "4th", tickets: 8 },
-  { id: 105, firstName: "Ellie", lastName: "Lee", teacher: "Choy", grade: "4th", tickets: 8 },
-  { id: 106, firstName: "Amelia", lastName: "Martin", teacher: "Choy", grade: "4th", tickets: 8 },
-  { id: 107, firstName: "Vivian", lastName: "Thompson", teacher: "Choy", grade: "4th", tickets: 8 },
-  { id: 108, firstName: "Harrison", lastName: "Stone", teacher: "Choy", grade: "4th", tickets: 8 },
-  { id: 109, firstName: "Everett", lastName: "Holland", teacher: "Koelzer", grade: "K", tickets: 8 },
-  { id: 110, firstName: "Tallulah", lastName: "Kiesel", teacher: "Koelzer", grade: "K", tickets: 8 },
-  { id: 111, firstName: "Peyton", lastName: "Koelzer", teacher: "Koelzer", grade: "K", tickets: 8 },
-  { id: 112, firstName: "Eva", lastName: "Prince-Berkelhamer", teacher: "Koelzer", grade: "K", tickets: 8 },
-  { id: 113, firstName: "Hazel", lastName: "Shi", teacher: "Koelzer", grade: "K", tickets: 8 },
-  { id: 114, firstName: "Zane", lastName: "Weiss", teacher: "Koelzer", grade: "K", tickets: 8 },
-  { id: 115, firstName: "Lauren", lastName: "Jaeger", teacher: "Linder", grade: "4th", tickets: 8 },
-  { id: 116, firstName: "Sofia", lastName: "Alcantara", teacher: "Mercado", grade: "2nd-3rd", tickets: 8 },
-  { id: 117, firstName: "Mackenzie", lastName: "Bible", teacher: "Mercado", grade: "2nd-3rd", tickets: 8 },
-  { id: 118, firstName: "Isa", lastName: "Fernandez", teacher: "Mercado", grade: "2nd-3rd", tickets: 8 },
-  { id: 119, firstName: "George", lastName: "Jambor", teacher: "Mercado", grade: "2nd-3rd", tickets: 8 },
-  { id: 120, firstName: "Tripp", lastName: "Moore", teacher: "Mercado", grade: "2nd-3rd", tickets: 8 },
-  { id: 121, firstName: "Lena", lastName: "Moriarty", teacher: "Mercado", grade: "2nd-3rd", tickets: 8 },
-  { id: 122, firstName: "Julia", lastName: "Oman", teacher: "Mercado", grade: "2nd-3rd", tickets: 8 },
-  { id: 123, firstName: "Jake", lastName: "Baraff", teacher: "Osborne", grade: "5th", tickets: 8 },
-  { id: 124, firstName: "Jade", lastName: "Endo", teacher: "Osborne", grade: "5th", tickets: 8 },
-  { id: 125, firstName: "Henry", lastName: "Heissenbuttel", teacher: "Osborne", grade: "5th", tickets: 8 },
-  { id: 126, firstName: "Hudson", lastName: "Leszyk", teacher: "Osborne", grade: "5th", tickets: 8 },
-  { id: 127, firstName: "Weslyn", lastName: "Lopez", teacher: "Osborne", grade: "5th", tickets: 8 },
-  { id: 128, firstName: "Grace", lastName: "Moran", teacher: "Osborne", grade: "5th", tickets: 8 },
-  { id: 129, firstName: "Nathan", lastName: "Schutze", teacher: "Osborne", grade: "5th", tickets: 8 },
-  { id: 130, firstName: "Sofie", lastName: "Sweeney", teacher: "Osborne", grade: "5th", tickets: 8 },
-  { id: 131, firstName: "Isabel", lastName: "Baden", teacher: "Pak", grade: "1st", tickets: 8 },
-  { id: 132, firstName: "Savannah", lastName: "Maestas", teacher: "Pak", grade: "1st", tickets: 8 },
-  { id: 133, firstName: "Connor", lastName: "McCall", teacher: "Pak", grade: "1st", tickets: 8 },
-  { id: 134, firstName: "Jade", lastName: "Morales", teacher: "Pak", grade: "1st", tickets: 8 },
-  { id: 135, firstName: "Lucy", lastName: "Tishler-Weinstein", teacher: "Pak", grade: "1st", tickets: 8 },
-  { id: 136, firstName: "Levi", lastName: "Valentine", teacher: "Pak", grade: "1st", tickets: 8 },
-  { id: 137, firstName: "Ruby", lastName: "Walker", teacher: "Pak", grade: "1st", tickets: 8 },
-  { id: 138, firstName: "John", lastName: "Wessels", teacher: "Pak", grade: "1st", tickets: 8 },
-  { id: 139, firstName: "Rachel", lastName: "Baez", teacher: "Spirk", grade: "1st-2nd", tickets: 8 },
-  { id: 140, firstName: "Tosca", lastName: "Henderson", teacher: "Spirk", grade: "1st-2nd", tickets: 8 },
-  { id: 141, firstName: "Buster", lastName: "Racket", teacher: "Spirk", grade: "1st-2nd", tickets: 8 },
-  { id: 142, firstName: "Millie", lastName: "Schultz", teacher: "Spirk", grade: "1st-2nd", tickets: 8 },
-  { id: 143, firstName: "Cole", lastName: "Acker", teacher: "Toste", grade: "3rd", tickets: 8 },
-  { id: 144, firstName: "Levi", lastName: "Gaddy", teacher: "Toste", grade: "3rd", tickets: 8 },
-  { id: 145, firstName: "Addison", lastName: "Jacobo", teacher: "Toste", grade: "3rd", tickets: 8 },
-  { id: 146, firstName: "Naomi", lastName: "Lamb", teacher: "Toste", grade: "3rd", tickets: 8 },
-  { id: 147, firstName: "Creedon", lastName: "Peasley", teacher: "Toste", grade: "3rd", tickets: 8 },
-  { id: 148, firstName: "Logan", lastName: "Peabody Hernandez", teacher: "Choy", grade: "4th", tickets: 7 },
-  { id: 149, firstName: "Katalina", lastName: "Acosta", teacher: "Koelzer", grade: "K", tickets: 7 },
-  { id: 150, firstName: "Zia", lastName: "Bean-Gonzalez", teacher: "Koelzer", grade: "K", tickets: 7 },
-  { id: 151, firstName: "Adelaide", lastName: "Kirkman", teacher: "Koelzer", grade: "K", tickets: 7 },
-  { id: 152, firstName: "Sara", lastName: "Nagra", teacher: "Koelzer", grade: "K", tickets: 7 },
-  { id: 153, firstName: "Emily", lastName: "Tierney", teacher: "Koelzer", grade: "K", tickets: 7 },
-  { id: 154, firstName: "Alice", lastName: "Chun", teacher: "Linder", grade: "4th", tickets: 7 },
-  { id: 155, firstName: "Jesse", lastName: "Dickinson", teacher: "Linder", grade: "4th", tickets: 7 },
-  { id: 156, firstName: "Liam", lastName: "Gregory", teacher: "Linder", grade: "4th", tickets: 7 },
-  { id: 157, firstName: "Andrew", lastName: "Bong", teacher: "Mercado", grade: "2nd-3rd", tickets: 7 },
-  { id: 158, firstName: "Justus", lastName: "Dickinson", teacher: "Mercado", grade: "2nd-3rd", tickets: 7 },
-  { id: 159, firstName: "Alex", lastName: "Martin", teacher: "Mercado", grade: "2nd-3rd", tickets: 7 },
-  { id: 160, firstName: "Kalea", lastName: "Mateo", teacher: "Mercado", grade: "2nd-3rd", tickets: 7 },
-  { id: 161, firstName: "Coen", lastName: "Patterson", teacher: "Mercado", grade: "2nd-3rd", tickets: 7 },
-  { id: 162, firstName: "Maci-Kaye", lastName: "Prado", teacher: "Mercado", grade: "2nd-3rd", tickets: 7 },
-  { id: 163, firstName: "Rafael", lastName: "Scopazzi", teacher: "Mercado", grade: "2nd-3rd", tickets: 7 },
-  { id: 164, firstName: "Charlie", lastName: "Soto", teacher: "Mercado", grade: "2nd-3rd", tickets: 7 },
-  { id: 165, firstName: "Mae", lastName: "Thompson", teacher: "Mercado", grade: "2nd-3rd", tickets: 7 },
-  { id: 166, firstName: "Clark", lastName: "Bennett", teacher: "Osborne", grade: "5th", tickets: 7 },
-  { id: 167, firstName: "Charlotte", lastName: "Chun", teacher: "Osborne", grade: "5th", tickets: 7 },
-  { id: 168, firstName: "Sasha", lastName: "Heeschen", teacher: "Osborne", grade: "5th", tickets: 7 },
-  { id: 169, firstName: "Scarlett", lastName: "Jones", teacher: "Osborne", grade: "5th", tickets: 7 },
-  { id: 170, firstName: "Anthony", lastName: "Saprico", teacher: "Osborne", grade: "5th", tickets: 7 },
-  { id: 171, firstName: "Kellan", lastName: "Yeakle", teacher: "Osborne", grade: "5th", tickets: 7 },
-  { id: 172, firstName: "Leo", lastName: "Dindzans", teacher: "Pak", grade: "1st", tickets: 7 },
-  { id: 173, firstName: "Justin", lastName: "Dodson", teacher: "Pak", grade: "1st", tickets: 7 },
-  { id: 174, firstName: "Jones", lastName: "Doolittle", teacher: "Pak", grade: "1st", tickets: 7 },
-  { id: 175, firstName: "Henry", lastName: "Goldman", teacher: "Pak", grade: "1st", tickets: 7 },
-  { id: 176, firstName: "Hollie", lastName: "Hurd", teacher: "Pak", grade: "1st", tickets: 7 },
-  { id: 177, firstName: "Emma", lastName: "Khone", teacher: "Pak", grade: "1st", tickets: 7 },
-  { id: 178, firstName: "Wyatt", lastName: "Leclercq", teacher: "Pak", grade: "1st", tickets: 7 },
-  { id: 179, firstName: "Cora", lastName: "Mulford", teacher: "Pak", grade: "1st", tickets: 7 },
-  { id: 180, firstName: "Jesse", lastName: "Nguyen", teacher: "Pak", grade: "1st", tickets: 7 },
-  { id: 181, firstName: "Bentley", lastName: "Shaposhnick", teacher: "Pak", grade: "1st", tickets: 7 },
-  { id: 182, firstName: "Alex", lastName: "Bell", teacher: "Spirk", grade: "1st-2nd", tickets: 7 },
-  { id: 183, firstName: "Sergio", lastName: "Flores Vara", teacher: "Spirk", grade: "1st-2nd", tickets: 7 },
-  { id: 184, firstName: "Rosie", lastName: "Kahlon", teacher: "Spirk", grade: "1st-2nd", tickets: 7 },
-  { id: 185, firstName: "Fiona", lastName: "McElheny", teacher: "Spirk", grade: "1st-2nd", tickets: 7 },
-  { id: 186, firstName: "Jordan", lastName: "Souza", teacher: "Spirk", grade: "1st-2nd", tickets: 7 },
-  { id: 187, firstName: "Clara", lastName: "Wright", teacher: "Spirk", grade: "1st-2nd", tickets: 7 },
-  { id: 188, firstName: "Ayden", lastName: "Williamson", teacher: "Spirk", grade: "1st-2nd", tickets: 7 },
-  { id: 189, firstName: "Raegan", lastName: "Brodie", teacher: "T. Lockwood", grade: "TK", tickets: 7 },
-  { id: 190, firstName: "Emme", lastName: "Capurro", teacher: "T. Lockwood", grade: "TK", tickets: 7 },
-  { id: 191, firstName: "Mason", lastName: "Huey", teacher: "T. Lockwood", grade: "TK", tickets: 7 },
-  { id: 192, firstName: "Lila", lastName: "Iglesias", teacher: "T. Lockwood", grade: "TK", tickets: 7 },
-  { id: 193, firstName: "Callen", lastName: "Jensen", teacher: "T. Lockwood", grade: "TK", tickets: 7 },
-  { id: 194, firstName: "June", lastName: "Magdanz", teacher: "T. Lockwood", grade: "TK", tickets: 7 },
-  { id: 195, firstName: "Giada", lastName: "Acosta", teacher: "Tucker", grade: "2nd", tickets: 7 },
-  { id: 196, firstName: "Eva", lastName: "Amore", teacher: "Tucker", grade: "2nd", tickets: 7 },
-  { id: 197, firstName: "Charlotte", lastName: "Baer", teacher: "Tucker", grade: "2nd", tickets: 7 },
-  { id: 198, firstName: "Francis", lastName: "Borgerson", teacher: "Tucker", grade: "2nd", tickets: 7 },
-  { id: 199, firstName: "Amayia", lastName: "Garcia", teacher: "Tucker", grade: "2nd", tickets: 7 },
-  { id: 200, firstName: "Layne", lastName: "Hall", teacher: "Tucker", grade: "2nd", tickets: 7 },
-  { id: 201, firstName: "Graham", lastName: "Mitchell", teacher: "Tucker", grade: "2nd", tickets: 7 },
-  { id: 202, firstName: "Arlo", lastName: "Morales", teacher: "Tucker", grade: "2nd", tickets: 7 },
-  { id: 203, firstName: "Rochelle", lastName: "Mutrey", teacher: "Tucker", grade: "2nd", tickets: 7 },
-  { id: 204, firstName: "Winnie", lastName: "Riegelhuth", teacher: "Tucker", grade: "2nd", tickets: 7 },
-  { id: 205, firstName: "Brody", lastName: "Valentine", teacher: "Tucker", grade: "2nd", tickets: 7 },
-  { id: 206, firstName: "Mariana", lastName: "Mix", teacher: "Linder", grade: "4th", tickets: 6 },
-  { id: 207, firstName: "Clara", lastName: "Orr", teacher: "Linder", grade: "4th", tickets: 6 },
-  { id: 208, firstName: "Dominic", lastName: "Prado", teacher: "Linder", grade: "4th", tickets: 6 },
-  { id: 209, firstName: "Kingston", lastName: "Ritchie-Mullins", teacher: "Linder", grade: "4th", tickets: 6 },
-  { id: 210, firstName: "Declan", lastName: "Hutchins", teacher: "Spirk", grade: "1st-2nd", tickets: 6 },
-  { id: 211, firstName: "Everett", lastName: "Kraft", teacher: "Spirk", grade: "1st-2nd", tickets: 6 },
-  { id: 212, firstName: "Jack", lastName: "Orr", teacher: "Spirk", grade: "1st-2nd", tickets: 6 },
-  { id: 213, firstName: "Skylar", lastName: "Williams", teacher: "Spirk", grade: "1st-2nd", tickets: 6 },
-  { id: 214, firstName: "Elsie", lastName: "Chen", teacher: "Toste", grade: "3rd", tickets: 6 },
-  { id: 215, firstName: "Rielyn", lastName: "Etcheto", teacher: "Toste", grade: "3rd", tickets: 6 },
-  { id: 216, firstName: "Emma", lastName: "MacDonald", teacher: "Toste", grade: "3rd", tickets: 6 },
-  { id: 217, firstName: "Maxwell", lastName: "Novak", teacher: "Toste", grade: "3rd", tickets: 6 },
-  { id: 218, firstName: "Rahul", lastName: "Parmar", teacher: "Toste", grade: "3rd", tickets: 6 },
-  { id: 219, firstName: "Emerson", lastName: "Templeton", teacher: "Toste", grade: "3rd", tickets: 6 },
-  { id: 220, firstName: "Liam", lastName: "Luijten", teacher: "Choy", grade: "4th", tickets: 5 },
-  { id: 221, firstName: "Jace", lastName: "Plateros", teacher: "Choy", grade: "4th", tickets: 5 },
-  { id: 222, firstName: "Henry", lastName: "Saferis", teacher: "Choy", grade: "4th", tickets: 5 },
-  { id: 223, firstName: "Avery", lastName: "Spach", teacher: "Choy", grade: "4th", tickets: 5 },
-  { id: 224, firstName: "Colt", lastName: "Templeton", teacher: "Choy", grade: "4th", tickets: 5 },
-  { id: 225, firstName: "Marshall", lastName: "Harrell", teacher: "Linder", grade: "4th", tickets: 5 },
-  { id: 226, firstName: "Julius", lastName: "Liu", teacher: "Linder", grade: "4th", tickets: 5 },
-  { id: 227, firstName: "Braxton", lastName: "Morales", teacher: "Linder", grade: "4th", tickets: 5 },
-  { id: 228, firstName: "Leo", lastName: "Retzlaff", teacher: "Linder", grade: "4th", tickets: 5 },
-  { id: 229, firstName: "Gavin", lastName: "Sy", teacher: "Linder", grade: "4th", tickets: 5 },
-  { id: 230, firstName: "Charles", lastName: "Fahey", teacher: "T. Lockwood", grade: "TK", tickets: 5 },
-  { id: 231, firstName: "Hannah", lastName: "Hamilton", teacher: "T. Lockwood", grade: "TK", tickets: 5 },
-  { id: 232, firstName: "Adelaide", lastName: "Joiner", teacher: "T. Lockwood", grade: "TK", tickets: 5 },
-  { id: 233, firstName: "Nolan", lastName: "Lyons", teacher: "T. Lockwood", grade: "TK", tickets: 5 },
-  { id: 234, firstName: "Liam", lastName: "Yang", teacher: "T. Lockwood", grade: "TK", tickets: 5 },
-  { id: 235, firstName: "Amelia", lastName: "See", teacher: "Tucker", grade: "2nd", tickets: 5 },
-  { id: 236, firstName: "Aadit", lastName: "Parmar", teacher: "Tucker", grade: "2nd", tickets: 4 },
-  { id: 237, firstName: "Hadley", lastName: "Peabody Hernandez", teacher: "L. Lockwood", grade: "TK", tickets: 3 },
-  { id: 238, firstName: "Vincent", lastName: "Baranik", teacher: "Linder", grade: "4th", tickets: 3 },
-  { id: 239, firstName: "Mila", lastName: "Garcia", teacher: "Toste", grade: "3rd", tickets: 3 },
-  { id: 240, firstName: "Owen", lastName: "Perkins", teacher: "Toste", grade: "3rd", tickets: 3 },
-  { id: 241, firstName: "Louis", lastName: "Milward-Dark", teacher: "Spirk", grade: "1st-2nd", tickets: 2 },
-  { id: 242, firstName: "Aurora", lastName: "Acosta", teacher: "Githens", grade: "K", tickets: 1 },
-  { id: 243, firstName: "Enna", lastName: "Miano", teacher: "Githens", grade: "K", tickets: 1 },
-  { id: 244, firstName: "Violet", lastName: "Rice", teacher: "Githens", grade: "K", tickets: 1 },
-  { id: 245, firstName: "Kaitlyn", lastName: "Navarro", teacher: "Toste", grade: "3rd", tickets: 1 },
-  { id: 246, firstName: "Rainer", lastName: "Tafoya", teacher: "Tucker", grade: "2nd", tickets: 1 },
+  {
+    "id": 0,
+    "firstName": "Maddox",
+    "lastName": "Mai",
+    "teacher": "\"Lopez",
+    "grade": "88",
+    "tickets": 0
+  },
+  {
+    "id": 1,
+    "firstName": "Avery",
+    "lastName": "Keil",
+    "teacher": "Osborne",
+    "grade": "5th",
+    "tickets": 73
+  },
+  {
+    "id": 2,
+    "firstName": "Kayla",
+    "lastName": "Park",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 66
+  },
+  {
+    "id": 3,
+    "firstName": "Avalon",
+    "lastName": "Black",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 43
+  },
+  {
+    "id": 4,
+    "firstName": "Mason",
+    "lastName": "Malawy",
+    "teacher": "Moore",
+    "grade": "5th",
+    "tickets": 39
+  },
+  {
+    "id": 5,
+    "firstName": "Noah",
+    "lastName": "Malawy",
+    "teacher": "\"Lopez",
+    "grade": "39",
+    "tickets": 0
+  },
+  {
+    "id": 6,
+    "firstName": "Brooklyn",
+    "lastName": "Johnston",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 38
+  },
+  {
+    "id": 7,
+    "firstName": "Olivia",
+    "lastName": "Pham",
+    "teacher": "Moore",
+    "grade": "5th",
+    "tickets": 36
+  },
+  {
+    "id": 8,
+    "firstName": "Nolan",
+    "lastName": "Huynh",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 35
+  },
+  {
+    "id": 9,
+    "firstName": "Trent",
+    "lastName": "Umezawa",
+    "teacher": "Mercado",
+    "grade": "2nd-3rd",
+    "tickets": 33
+  },
+  {
+    "id": 10,
+    "firstName": "Jacob",
+    "lastName": "Phan",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 32
+  },
+  {
+    "id": 11,
+    "firstName": "Madeline",
+    "lastName": "Phan",
+    "teacher": "Schulenburg",
+    "grade": "TK",
+    "tickets": 32
+  },
+  {
+    "id": 12,
+    "firstName": "Cole",
+    "lastName": "Nguyen",
+    "teacher": "\"Lopez",
+    "grade": "32",
+    "tickets": 0
+  },
+  {
+    "id": 13,
+    "firstName": "Octavia",
+    "lastName": "Tran",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 26
+  },
+  {
+    "id": 14,
+    "firstName": "Mia",
+    "lastName": "van Dyk",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 26
+  },
+  {
+    "id": 15,
+    "firstName": "Kennedy",
+    "lastName": "Long",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 25
+  },
+  {
+    "id": 16,
+    "firstName": "Thiago",
+    "lastName": "Erskine",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 24
+  },
+  {
+    "id": 17,
+    "firstName": "Bryson",
+    "lastName": "Vuong",
+    "teacher": "Osborne",
+    "grade": "5th",
+    "tickets": 24
+  },
+  {
+    "id": 18,
+    "firstName": "Evelyn",
+    "lastName": "Vuong",
+    "teacher": "Carr",
+    "grade": "2nd",
+    "tickets": 24
+  },
+  {
+    "id": 19,
+    "firstName": "Parker",
+    "lastName": "Nguyen",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 24
+  },
+  {
+    "id": 20,
+    "firstName": "Axel",
+    "lastName": "Banales",
+    "teacher": "\"Lopez",
+    "grade": "23",
+    "tickets": 0
+  },
+  {
+    "id": 21,
+    "firstName": "Alexis",
+    "lastName": "Nguyen",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 23
+  },
+  {
+    "id": 22,
+    "firstName": "Zoe",
+    "lastName": "Miller",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 22
+  },
+  {
+    "id": 23,
+    "firstName": "Nathan",
+    "lastName": "Tran",
+    "teacher": "Manthorne",
+    "grade": "TK",
+    "tickets": 20
+  },
+  {
+    "id": 24,
+    "firstName": "Lucia",
+    "lastName": "Orinion",
+    "teacher": "Osborne",
+    "grade": "5th",
+    "tickets": 20
+  },
+  {
+    "id": 25,
+    "firstName": "Emmalynn",
+    "lastName": "Nguyen",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 20
+  },
+  {
+    "id": 26,
+    "firstName": "Dyllan",
+    "lastName": "Phan",
+    "teacher": "Mishler",
+    "grade": "3rd",
+    "tickets": 20
+  },
+  {
+    "id": 27,
+    "firstName": "Skyler",
+    "lastName": "Phan",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 20
+  },
+  {
+    "id": 28,
+    "firstName": "Aria",
+    "lastName": "Weinfurter",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 20
+  },
+  {
+    "id": 29,
+    "firstName": "Romtin",
+    "lastName": "Goshtasbi",
+    "teacher": "Osborne",
+    "grade": "5th",
+    "tickets": 20
+  },
+  {
+    "id": 30,
+    "firstName": "Ryan",
+    "lastName": "Luu",
+    "teacher": "Sakelios",
+    "grade": "5th",
+    "tickets": 20
+  },
+  {
+    "id": 31,
+    "firstName": "Van Anh",
+    "lastName": "Nguyen",
+    "teacher": "Sakelios",
+    "grade": "5th",
+    "tickets": 20
+  },
+  {
+    "id": 32,
+    "firstName": "Adam",
+    "lastName": "Nguyen",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 18
+  },
+  {
+    "id": 33,
+    "firstName": "Amelia",
+    "lastName": "Nguyen",
+    "teacher": "Moore",
+    "grade": "5th",
+    "tickets": 18
+  },
+  {
+    "id": 34,
+    "firstName": "Avery",
+    "lastName": "Nguyen",
+    "teacher": "\"Lopez",
+    "grade": "18",
+    "tickets": 0
+  },
+  {
+    "id": 35,
+    "firstName": "Cole",
+    "lastName": "San Agustin",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 18
+  },
+  {
+    "id": 36,
+    "firstName": "Leo",
+    "lastName": "Kitlergthai",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 17
+  },
+  {
+    "id": 37,
+    "firstName": "Paige",
+    "lastName": "Sherwood",
+    "teacher": "\"Lopez",
+    "grade": "16",
+    "tickets": 0
+  },
+  {
+    "id": 38,
+    "firstName": "Bradley",
+    "lastName": "Lam",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 16
+  },
+  {
+    "id": 39,
+    "firstName": "Quinn",
+    "lastName": "Pham",
+    "teacher": "Manthorne",
+    "grade": "TK",
+    "tickets": 16
+  },
+  {
+    "id": 40,
+    "firstName": "Sierra",
+    "lastName": "Kalajian",
+    "teacher": "Harkins",
+    "grade": "4th",
+    "tickets": 15
+  },
+  {
+    "id": 41,
+    "firstName": "Abby",
+    "lastName": "Glimpse",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 15
+  },
+  {
+    "id": 42,
+    "firstName": "Charlie",
+    "lastName": "Varela",
+    "teacher": "Moore",
+    "grade": "5th",
+    "tickets": 14
+  },
+  {
+    "id": 43,
+    "firstName": "Siouxsie",
+    "lastName": "Varela",
+    "teacher": "Muldorf",
+    "grade": "1st",
+    "tickets": 14
+  },
+  {
+    "id": 44,
+    "firstName": "Aidan",
+    "lastName": "Houston",
+    "teacher": "Moore",
+    "grade": "5th",
+    "tickets": 14
+  },
+  {
+    "id": 45,
+    "firstName": "Kaleah",
+    "lastName": "Mcclurg",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 14
+  },
+  {
+    "id": 46,
+    "firstName": "Dominic",
+    "lastName": "Desrochers",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 13
+  },
+  {
+    "id": 47,
+    "firstName": "Khaleesi",
+    "lastName": "Combs",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 13
+  },
+  {
+    "id": 48,
+    "firstName": "Michael",
+    "lastName": "Mao",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 13
+  },
+  {
+    "id": 49,
+    "firstName": "Taia",
+    "lastName": "Moriguchi",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 13
+  },
+  {
+    "id": 50,
+    "firstName": "Parker",
+    "lastName": "Berkis",
+    "teacher": "Bowers",
+    "grade": "K-1st",
+    "tickets": 13
+  },
+  {
+    "id": 51,
+    "firstName": "Blake",
+    "lastName": "Le",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 13
+  },
+  {
+    "id": 52,
+    "firstName": "Ty",
+    "lastName": "Le",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 13
+  },
+  {
+    "id": 53,
+    "firstName": "Gavin",
+    "lastName": "Weber",
+    "teacher": "Schulenburg",
+    "grade": "TK",
+    "tickets": 12
+  },
+  {
+    "id": 54,
+    "firstName": "Lotte",
+    "lastName": "Olivier",
+    "teacher": "\"Lopez",
+    "grade": "12",
+    "tickets": 0
+  },
+  {
+    "id": 55,
+    "firstName": "Melody",
+    "lastName": "Olivier",
+    "teacher": "Harkins",
+    "grade": "4th",
+    "tickets": 12
+  },
+  {
+    "id": 56,
+    "firstName": "Ryan",
+    "lastName": "Vu",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 12
+  },
+  {
+    "id": 57,
+    "firstName": "Lia",
+    "lastName": "Tong",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 12
+  },
+  {
+    "id": 58,
+    "firstName": "Madison",
+    "lastName": "Tong",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 12
+  },
+  {
+    "id": 59,
+    "firstName": "Mason Carter",
+    "lastName": "Le",
+    "teacher": "\"Lopez",
+    "grade": "12",
+    "tickets": 0
+  },
+  {
+    "id": 60,
+    "firstName": "Charlotte",
+    "lastName": "Gregory",
+    "teacher": "Osborne",
+    "grade": "5th",
+    "tickets": 12
+  },
+  {
+    "id": 61,
+    "firstName": "Camilla",
+    "lastName": "Nguyen",
+    "teacher": "Carr",
+    "grade": "2nd",
+    "tickets": 11
+  },
+  {
+    "id": 62,
+    "firstName": "Logan",
+    "lastName": "Park",
+    "teacher": "Grant",
+    "grade": "4th-5th",
+    "tickets": 11
+  },
+  {
+    "id": 63,
+    "firstName": "Emerson",
+    "lastName": "O'Brien",
+    "teacher": "Muldorf",
+    "grade": "1st",
+    "tickets": 11
+  },
+  {
+    "id": 64,
+    "firstName": "McKenna",
+    "lastName": "O'Brien",
+    "teacher": "Manthorne",
+    "grade": "TK",
+    "tickets": 11
+  },
+  {
+    "id": 65,
+    "firstName": "Riley",
+    "lastName": "O'Brien",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 11
+  },
+  {
+    "id": 66,
+    "firstName": "Teagan",
+    "lastName": "O'Brien",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 11
+  },
+  {
+    "id": 67,
+    "firstName": "Mateo",
+    "lastName": "Sollano",
+    "teacher": "Schulenburg",
+    "grade": "TK",
+    "tickets": 10
+  },
+  {
+    "id": 68,
+    "firstName": "Ray",
+    "lastName": "Sollano",
+    "teacher": "Carr",
+    "grade": "2nd",
+    "tickets": 10
+  },
+  {
+    "id": 69,
+    "firstName": "Ellie",
+    "lastName": "Jones",
+    "teacher": "Moore",
+    "grade": "5th",
+    "tickets": 10
+  },
+  {
+    "id": 70,
+    "firstName": "Callum",
+    "lastName": "Fuller",
+    "teacher": "Manthorne",
+    "grade": "TK",
+    "tickets": 10
+  },
+  {
+    "id": 71,
+    "firstName": "Evelyn",
+    "lastName": "Li",
+    "teacher": "Carr",
+    "grade": "2nd",
+    "tickets": 10
+  },
+  {
+    "id": 72,
+    "firstName": "Atton",
+    "lastName": "Sugano",
+    "teacher": "\"Lopez",
+    "grade": "10",
+    "tickets": 0
+  },
+  {
+    "id": 73,
+    "firstName": "Brinklee",
+    "lastName": "Sugano",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 10
+  },
+  {
+    "id": 74,
+    "firstName": "Brooklyn",
+    "lastName": "Kint",
+    "teacher": "Mishler",
+    "grade": "3rd",
+    "tickets": 10
+  },
+  {
+    "id": 75,
+    "firstName": "Jayla",
+    "lastName": "Kint",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 10
+  },
+  {
+    "id": 76,
+    "firstName": "Henson",
+    "lastName": "Nguyen",
+    "teacher": "Osborne",
+    "grade": "5th",
+    "tickets": 10
+  },
+  {
+    "id": 77,
+    "firstName": "Emery",
+    "lastName": "Stevenson",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 9
+  },
+  {
+    "id": 78,
+    "firstName": "Coco",
+    "lastName": "Smith",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 9
+  },
+  {
+    "id": 79,
+    "firstName": "Jackson",
+    "lastName": "Smith",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 9
+  },
+  {
+    "id": 80,
+    "firstName": "Nicholai",
+    "lastName": "Vo",
+    "teacher": "Manthorne",
+    "grade": "TK",
+    "tickets": 9
+  },
+  {
+    "id": 81,
+    "firstName": "Elias",
+    "lastName": "Guei",
+    "teacher": "Muldorf",
+    "grade": "1st",
+    "tickets": 9
+  },
+  {
+    "id": 82,
+    "firstName": "Eunice",
+    "lastName": "Guei",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 9
+  },
+  {
+    "id": 83,
+    "firstName": "Benjamin",
+    "lastName": "Kyritsis",
+    "teacher": "\"Lopez",
+    "grade": "8",
+    "tickets": 0
+  },
+  {
+    "id": 84,
+    "firstName": "Matthew",
+    "lastName": "Kyritsis",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 8
+  },
+  {
+    "id": 85,
+    "firstName": "Jenny Tran",
+    "lastName": "Luong",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 8
+  },
+  {
+    "id": 86,
+    "firstName": "George",
+    "lastName": "Pham",
+    "teacher": "Muldorf",
+    "grade": "1st",
+    "tickets": 8
+  },
+  {
+    "id": 87,
+    "firstName": "Kelly",
+    "lastName": "Talavou",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 8
+  },
+  {
+    "id": 88,
+    "firstName": "Brooklyn",
+    "lastName": "Nguyen",
+    "teacher": "Mishler",
+    "grade": "3rd",
+    "tickets": 8
+  },
+  {
+    "id": 89,
+    "firstName": "Max",
+    "lastName": "Nguyen",
+    "teacher": "Sakelios",
+    "grade": "5th",
+    "tickets": 8
+  },
+  {
+    "id": 90,
+    "firstName": "Brixton",
+    "lastName": "Brody",
+    "teacher": "Schulenburg",
+    "grade": "TK",
+    "tickets": 8
+  },
+  {
+    "id": 91,
+    "firstName": "Brylin",
+    "lastName": "Brody",
+    "teacher": "Moore",
+    "grade": "5th",
+    "tickets": 8
+  },
+  {
+    "id": 92,
+    "firstName": "Emily",
+    "lastName": "Tran",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 8
+  },
+  {
+    "id": 93,
+    "firstName": "Francis",
+    "lastName": "Daley",
+    "teacher": "Mercado",
+    "grade": "2nd-3rd",
+    "tickets": 8
+  },
+  {
+    "id": 94,
+    "firstName": "Holland",
+    "lastName": "Turley",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 8
+  },
+  {
+    "id": 95,
+    "firstName": "Emerson",
+    "lastName": "Stanfield",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 8
+  },
+  {
+    "id": 96,
+    "firstName": "Wren",
+    "lastName": "Stanfield",
+    "teacher": "\"Lopez",
+    "grade": "8",
+    "tickets": 0
+  },
+  {
+    "id": 97,
+    "firstName": "Rose",
+    "lastName": "Hurst",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 8
+  },
+  {
+    "id": 98,
+    "firstName": "Hazel",
+    "lastName": "Ngo",
+    "teacher": "Mercado",
+    "grade": "2nd-3rd",
+    "tickets": 7
+  },
+  {
+    "id": 99,
+    "firstName": "Eisley",
+    "lastName": "Anderson",
+    "teacher": "\"Lopez",
+    "grade": "7",
+    "tickets": 0
+  },
+  {
+    "id": 100,
+    "firstName": "Marcus",
+    "lastName": "Anderson",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 7
+  },
+  {
+    "id": 101,
+    "firstName": "Nathan",
+    "lastName": "Nguyen",
+    "teacher": "Harkins",
+    "grade": "4th",
+    "tickets": 7
+  },
+  {
+    "id": 102,
+    "firstName": "Maxon",
+    "lastName": "Ho",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 7
+  },
+  {
+    "id": 103,
+    "firstName": "Skye",
+    "lastName": "Huynh",
+    "teacher": "Schulenburg",
+    "grade": "TK",
+    "tickets": 7
+  },
+  {
+    "id": 104,
+    "firstName": "Soleil",
+    "lastName": "Huynh",
+    "teacher": "\"Lopez",
+    "grade": "7",
+    "tickets": 0
+  },
+  {
+    "id": 105,
+    "firstName": "Hazel",
+    "lastName": "Evans",
+    "teacher": "Manthorne",
+    "grade": "TK",
+    "tickets": 7
+  },
+  {
+    "id": 106,
+    "firstName": "Alice",
+    "lastName": "Tran",
+    "teacher": "Muldorf",
+    "grade": "1st",
+    "tickets": 7
+  },
+  {
+    "id": 107,
+    "firstName": "Cash",
+    "lastName": "Nguyen",
+    "teacher": "Bowers",
+    "grade": "K-1st",
+    "tickets": 7
+  },
+  {
+    "id": 108,
+    "firstName": "Zelia",
+    "lastName": "Verdin",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 7
+  },
+  {
+    "id": 109,
+    "firstName": "Brianna",
+    "lastName": "Noland",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 7
+  },
+  {
+    "id": 110,
+    "firstName": "Ebrahim",
+    "lastName": "Foroushani",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 6
+  },
+  {
+    "id": 111,
+    "firstName": "Sabrina",
+    "lastName": "Foroushani",
+    "teacher": "Carr",
+    "grade": "2nd",
+    "tickets": 6
+  },
+  {
+    "id": 112,
+    "firstName": "Aalyssa",
+    "lastName": "Pham",
+    "teacher": "Carr",
+    "grade": "2nd",
+    "tickets": 6
+  },
+  {
+    "id": 113,
+    "firstName": "Tyler",
+    "lastName": "White",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 6
+  },
+  {
+    "id": 114,
+    "firstName": "Amelia",
+    "lastName": "Walsh",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 6
+  },
+  {
+    "id": 115,
+    "firstName": "Josephine",
+    "lastName": "Walsh",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 6
+  },
+  {
+    "id": 116,
+    "firstName": "Landon",
+    "lastName": "Davila",
+    "teacher": "Sakelios",
+    "grade": "5th",
+    "tickets": 6
+  },
+  {
+    "id": 117,
+    "firstName": "Adelyn",
+    "lastName": "Leuluai",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 6
+  },
+  {
+    "id": 118,
+    "firstName": "Nathaniel",
+    "lastName": "Aguilar",
+    "teacher": "Mishler",
+    "grade": "3rd",
+    "tickets": 6
+  },
+  {
+    "id": 119,
+    "firstName": "Colin",
+    "lastName": "Chi",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 6
+  },
+  {
+    "id": 120,
+    "firstName": "Braxton",
+    "lastName": "Grant",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 6
+  },
+  {
+    "id": 121,
+    "firstName": "Abigail",
+    "lastName": "Hoang",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 6
+  },
+  {
+    "id": 122,
+    "firstName": "Preston",
+    "lastName": "Tran",
+    "teacher": "Harkins",
+    "grade": "4th",
+    "tickets": 6
+  },
+  {
+    "id": 123,
+    "firstName": "Malachi",
+    "lastName": "Hong",
+    "teacher": "\"Lopez",
+    "grade": "6",
+    "tickets": 0
+  },
+  {
+    "id": 124,
+    "firstName": "Tobias",
+    "lastName": "Hong",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 6
+  },
+  {
+    "id": 125,
+    "firstName": "Alexi",
+    "lastName": "Le",
+    "teacher": "Grant",
+    "grade": "4th-5th",
+    "tickets": 6
+  },
+  {
+    "id": 126,
+    "firstName": "Zeus",
+    "lastName": "Verdin",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 6
+  },
+  {
+    "id": 127,
+    "firstName": "Austen",
+    "lastName": "Howard",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 6
+  },
+  {
+    "id": 128,
+    "firstName": "Camilla",
+    "lastName": "Howard",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 6
+  },
+  {
+    "id": 129,
+    "firstName": "Megan",
+    "lastName": "Githens",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 5
+  },
+  {
+    "id": 130,
+    "firstName": "Ethan",
+    "lastName": "Castrey",
+    "teacher": "Mishler",
+    "grade": "3rd",
+    "tickets": 5
+  },
+  {
+    "id": 131,
+    "firstName": "Luke",
+    "lastName": "Castrey",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 5
+  },
+  {
+    "id": 132,
+    "firstName": "Aldous",
+    "lastName": "Dubrau",
+    "teacher": "Mercado",
+    "grade": "2nd-3rd",
+    "tickets": 5
+  },
+  {
+    "id": 133,
+    "firstName": "Claire",
+    "lastName": "Dyla",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 5
+  },
+  {
+    "id": 134,
+    "firstName": "Shaan",
+    "lastName": "Vaswani",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 4
+  },
+  {
+    "id": 135,
+    "firstName": "Evan",
+    "lastName": "Le",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 4
+  },
+  {
+    "id": 136,
+    "firstName": "Avery",
+    "lastName": "Breiter",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 4
+  },
+  {
+    "id": 137,
+    "firstName": "Gracie",
+    "lastName": "Breiter",
+    "teacher": "Harkins",
+    "grade": "4th",
+    "tickets": 4
+  },
+  {
+    "id": 138,
+    "firstName": "Maia",
+    "lastName": "Castro",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 4
+  },
+  {
+    "id": 139,
+    "firstName": "Dani",
+    "lastName": "Cooper",
+    "teacher": "Muldorf",
+    "grade": "1st",
+    "tickets": 4
+  },
+  {
+    "id": 140,
+    "firstName": "Samantha",
+    "lastName": "Cooper",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 4
+  },
+  {
+    "id": 141,
+    "firstName": "Grayson",
+    "lastName": "Lino",
+    "teacher": "Sakelios",
+    "grade": "5th",
+    "tickets": 4
+  },
+  {
+    "id": 142,
+    "firstName": "Mia",
+    "lastName": "Nguyen",
+    "teacher": "Sakelios",
+    "grade": "5th",
+    "tickets": 4
+  },
+  {
+    "id": 143,
+    "firstName": "Benjamin",
+    "lastName": "Monastra",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 4
+  },
+  {
+    "id": 144,
+    "firstName": "Cameron",
+    "lastName": "Monastra",
+    "teacher": "\"Lopez",
+    "grade": "4",
+    "tickets": 0
+  },
+  {
+    "id": 145,
+    "firstName": "Ethan",
+    "lastName": "Ha",
+    "teacher": "\"Lopez",
+    "grade": "4",
+    "tickets": 0
+  },
+  {
+    "id": 146,
+    "firstName": "Keston",
+    "lastName": "Hirata",
+    "teacher": "\"Lopez",
+    "grade": "4",
+    "tickets": 0
+  },
+  {
+    "id": 147,
+    "firstName": "Philopateer",
+    "lastName": "Ibrahim",
+    "teacher": "\"Lopez",
+    "grade": "4",
+    "tickets": 0
+  },
+  {
+    "id": 148,
+    "firstName": "Jaylynn",
+    "lastName": "Lai",
+    "teacher": "\"Lopez",
+    "grade": "4",
+    "tickets": 0
+  },
+  {
+    "id": 149,
+    "firstName": "Emma",
+    "lastName": "Le",
+    "teacher": "Grant",
+    "grade": "4th-5th",
+    "tickets": 4
+  },
+  {
+    "id": 150,
+    "firstName": "Daisy",
+    "lastName": "Nguyen",
+    "teacher": "\"Lopez",
+    "grade": "4",
+    "tickets": 0
+  },
+  {
+    "id": 151,
+    "firstName": "Dawson",
+    "lastName": "Nguyen",
+    "teacher": "Harkins",
+    "grade": "4th",
+    "tickets": 4
+  },
+  {
+    "id": 152,
+    "firstName": "Hope",
+    "lastName": "Nguyen",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 4
+  },
+  {
+    "id": 153,
+    "firstName": "Noah",
+    "lastName": "Nguyen",
+    "teacher": "\"Lopez",
+    "grade": "4",
+    "tickets": 0
+  },
+  {
+    "id": 154,
+    "firstName": "Tu",
+    "lastName": "Nguyen",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 4
+  },
+  {
+    "id": 155,
+    "firstName": "Elliana",
+    "lastName": "Olivares",
+    "teacher": "Manthorne",
+    "grade": "TK",
+    "tickets": 4
+  },
+  {
+    "id": 156,
+    "firstName": "Mila",
+    "lastName": "Olivares",
+    "teacher": "Carr",
+    "grade": "2nd",
+    "tickets": 4
+  },
+  {
+    "id": 157,
+    "firstName": "Zinnia",
+    "lastName": "Sedlak",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 4
+  },
+  {
+    "id": 158,
+    "firstName": "Drew",
+    "lastName": "Terich",
+    "teacher": "Osborne",
+    "grade": "5th",
+    "tickets": 4
+  },
+  {
+    "id": 159,
+    "firstName": "Logan",
+    "lastName": "Terich",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 4
+  },
+  {
+    "id": 160,
+    "firstName": "Kyan",
+    "lastName": "Tran",
+    "teacher": "Muldorf",
+    "grade": "1st",
+    "tickets": 4
+  },
+  {
+    "id": 161,
+    "firstName": "Lyanne",
+    "lastName": "Tran",
+    "teacher": "\"Lopez",
+    "grade": "4",
+    "tickets": 0
+  },
+  {
+    "id": 162,
+    "firstName": "Tryan",
+    "lastName": "Tran",
+    "teacher": "Carr",
+    "grade": "2nd",
+    "tickets": 4
+  },
+  {
+    "id": 163,
+    "firstName": "Evan",
+    "lastName": "Dalrymple",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 4
+  },
+  {
+    "id": 164,
+    "firstName": "Jordan",
+    "lastName": "Navarro",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 4
+  },
+  {
+    "id": 165,
+    "firstName": "Kaitlyn",
+    "lastName": "Navarro",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 4
+  },
+  {
+    "id": 166,
+    "firstName": "Sage",
+    "lastName": "Dimick",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 4
+  },
+  {
+    "id": 167,
+    "firstName": "Colin",
+    "lastName": "Cruz",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 4
+  },
+  {
+    "id": 168,
+    "firstName": "Hunter",
+    "lastName": "Cruz",
+    "teacher": "\"Lopez",
+    "grade": "4",
+    "tickets": 0
+  },
+  {
+    "id": 169,
+    "firstName": "Logan",
+    "lastName": "Cruz",
+    "teacher": "Moore",
+    "grade": "5th",
+    "tickets": 4
+  },
+  {
+    "id": 170,
+    "firstName": "Shannon",
+    "lastName": "Vo",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 4
+  },
+  {
+    "id": 171,
+    "firstName": "Jade",
+    "lastName": "Vazquez",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 4
+  },
+  {
+    "id": 172,
+    "firstName": "Kyla",
+    "lastName": "Vazquez",
+    "teacher": "\"Lopez",
+    "grade": "4",
+    "tickets": 0
+  },
+  {
+    "id": 173,
+    "firstName": "Lydia",
+    "lastName": "Blakey",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 3
+  },
+  {
+    "id": 174,
+    "firstName": "Alison",
+    "lastName": "Nguyen",
+    "teacher": "Sakelios",
+    "grade": "5th",
+    "tickets": 3
+  },
+  {
+    "id": 175,
+    "firstName": "Liam",
+    "lastName": "Nguyen",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 3
+  },
+  {
+    "id": 176,
+    "firstName": "Bella",
+    "lastName": "Puentes",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 3
+  },
+  {
+    "id": 177,
+    "firstName": "Grayson",
+    "lastName": "Wilson",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 3
+  },
+  {
+    "id": 178,
+    "firstName": "Landon",
+    "lastName": "Johnson",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 3
+  },
+  {
+    "id": 179,
+    "firstName": "Logan",
+    "lastName": "Johnson",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 3
+  },
+  {
+    "id": 180,
+    "firstName": "Jayden",
+    "lastName": "Maeda",
+    "teacher": "Osborne",
+    "grade": "5th",
+    "tickets": 2
+  },
+  {
+    "id": 181,
+    "firstName": "Langston",
+    "lastName": "Shieh",
+    "teacher": "\"Lopez",
+    "grade": "2",
+    "tickets": 0
+  },
+  {
+    "id": 182,
+    "firstName": "Everleigh",
+    "lastName": "Vega",
+    "teacher": "Mishler",
+    "grade": "3rd",
+    "tickets": 2
+  },
+  {
+    "id": 183,
+    "firstName": "Foster",
+    "lastName": "Vega",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 2
+  },
+  {
+    "id": 184,
+    "firstName": "Isaiah",
+    "lastName": "Vega",
+    "teacher": "Osborne",
+    "grade": "5th",
+    "tickets": 2
+  },
+  {
+    "id": 185,
+    "firstName": "Emery",
+    "lastName": "Hagstrom",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 2
+  },
+  {
+    "id": 186,
+    "firstName": "Harper",
+    "lastName": "Hagstrom",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 2
+  },
+  {
+    "id": 187,
+    "firstName": "Dmitri",
+    "lastName": "Callan",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 2
+  },
+  {
+    "id": 188,
+    "firstName": "Leon",
+    "lastName": "Callan",
+    "teacher": "Schulenburg",
+    "grade": "TK",
+    "tickets": 2
+  },
+  {
+    "id": 189,
+    "firstName": "Addie",
+    "lastName": "Dinh",
+    "teacher": "Moore",
+    "grade": "5th",
+    "tickets": 2
+  },
+  {
+    "id": 190,
+    "firstName": "Izzie",
+    "lastName": "Dinh",
+    "teacher": "Muldorf",
+    "grade": "1st",
+    "tickets": 2
+  },
+  {
+    "id": 191,
+    "firstName": "Liam",
+    "lastName": "Duong",
+    "teacher": "Muldorf",
+    "grade": "1st",
+    "tickets": 2
+  },
+  {
+    "id": 192,
+    "firstName": "Skyler",
+    "lastName": "Espinoza",
+    "teacher": "Moore",
+    "grade": "5th",
+    "tickets": 2
+  },
+  {
+    "id": 193,
+    "firstName": "Sterling",
+    "lastName": "Espinoza",
+    "teacher": "Mishler",
+    "grade": "3rd",
+    "tickets": 2
+  },
+  {
+    "id": 194,
+    "firstName": "Elijah",
+    "lastName": "Maldonado",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 2
+  },
+  {
+    "id": 195,
+    "firstName": "Maxwell",
+    "lastName": "Maldonado",
+    "teacher": "Sakelios",
+    "grade": "5th",
+    "tickets": 2
+  },
+  {
+    "id": 196,
+    "firstName": "Emily",
+    "lastName": "Nguyen",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 2
+  },
+  {
+    "id": 197,
+    "firstName": "Mason",
+    "lastName": "Nguyen",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 2
+  },
+  {
+    "id": 198,
+    "firstName": "Aiden",
+    "lastName": "Tajanlangit",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 2
+  },
+  {
+    "id": 199,
+    "firstName": "Ian",
+    "lastName": "Tajanlangit",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 2
+  },
+  {
+    "id": 200,
+    "firstName": "Sadie",
+    "lastName": "Chanthavong",
+    "teacher": "Harkins",
+    "grade": "4th",
+    "tickets": 2
+  },
+  {
+    "id": 201,
+    "firstName": "Edward",
+    "lastName": "DeLamater",
+    "teacher": "Grant",
+    "grade": "4th-5th",
+    "tickets": 2
+  },
+  {
+    "id": 202,
+    "firstName": "Bryson",
+    "lastName": "Dolan",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 2
+  },
+  {
+    "id": 203,
+    "firstName": "Jaxon",
+    "lastName": "Dolan",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 2
+  },
+  {
+    "id": 204,
+    "firstName": "Jake",
+    "lastName": "Final",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 2
+  },
+  {
+    "id": 205,
+    "firstName": "Henry",
+    "lastName": "Jensen",
+    "teacher": "Grant",
+    "grade": "4th-5th",
+    "tickets": 2
+  },
+  {
+    "id": 206,
+    "firstName": "Caleb",
+    "lastName": "Khittikhoun",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 2
+  },
+  {
+    "id": 207,
+    "firstName": "Penelope",
+    "lastName": "Le",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 2
+  },
+  {
+    "id": 208,
+    "firstName": "Nolan",
+    "lastName": "Nguyen",
+    "teacher": "Mishler",
+    "grade": "3rd",
+    "tickets": 2
+  },
+  {
+    "id": 209,
+    "firstName": "Stella",
+    "lastName": "Nguyen",
+    "teacher": "Osborne",
+    "grade": "5th",
+    "tickets": 2
+  },
+  {
+    "id": 210,
+    "firstName": "Mason",
+    "lastName": "Soderberg",
+    "teacher": "Osborne",
+    "grade": "5th",
+    "tickets": 2
+  },
+  {
+    "id": 211,
+    "firstName": "Hannah",
+    "lastName": "Tang",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 2
+  },
+  {
+    "id": 212,
+    "firstName": "Annabelle",
+    "lastName": "Tran",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 2
+  },
+  {
+    "id": 213,
+    "firstName": "Madeleine",
+    "lastName": "Tran",
+    "teacher": "\"Lopez",
+    "grade": "2",
+    "tickets": 0
+  },
+  {
+    "id": 214,
+    "firstName": "Jett",
+    "lastName": "Wong",
+    "teacher": "Carr",
+    "grade": "2nd",
+    "tickets": 2
+  },
+  {
+    "id": 215,
+    "firstName": "Parker",
+    "lastName": "Chau",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 2
+  },
+  {
+    "id": 216,
+    "firstName": "Nam",
+    "lastName": "Dan",
+    "teacher": "Harkins",
+    "grade": "4th",
+    "tickets": 2
+  },
+  {
+    "id": 217,
+    "firstName": "Nayer",
+    "lastName": "Hamed",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 2
+  },
+  {
+    "id": 218,
+    "firstName": "Aubrie",
+    "lastName": "Le",
+    "teacher": "Carr",
+    "grade": "2nd",
+    "tickets": 2
+  },
+  {
+    "id": 219,
+    "firstName": "Cara",
+    "lastName": "Le",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 2
+  },
+  {
+    "id": 220,
+    "firstName": "Evalyn",
+    "lastName": "Le",
+    "teacher": "Augustus",
+    "grade": "3rd",
+    "tickets": 2
+  },
+  {
+    "id": 221,
+    "firstName": "Leon",
+    "lastName": "Le",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 2
+  },
+  {
+    "id": 222,
+    "firstName": "Rylan",
+    "lastName": "Ly",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 2
+  },
+  {
+    "id": 223,
+    "firstName": "Troy",
+    "lastName": "Ly",
+    "teacher": "Spirk",
+    "grade": "1st-2nd",
+    "tickets": 2
+  },
+  {
+    "id": 224,
+    "firstName": "Ethan",
+    "lastName": "Ngo",
+    "teacher": "Carr",
+    "grade": "2nd",
+    "tickets": 2
+  },
+  {
+    "id": 225,
+    "firstName": "Connor",
+    "lastName": "Nguyen",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 2
+  },
+  {
+    "id": 226,
+    "firstName": "Jacob",
+    "lastName": "Wong",
+    "teacher": "Sakelios",
+    "grade": "5th",
+    "tickets": 2
+  },
+  {
+    "id": 227,
+    "firstName": "Jayden",
+    "lastName": "Zhang",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 2
+  },
+  {
+    "id": 228,
+    "firstName": "Savio",
+    "lastName": "Le",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 2
+  },
+  {
+    "id": 229,
+    "firstName": "Hannah",
+    "lastName": "Pham",
+    "teacher": "Huelle",
+    "grade": "4th",
+    "tickets": 2
+  },
+  {
+    "id": 230,
+    "firstName": "Preston",
+    "lastName": "Pham",
+    "teacher": "Sakelios",
+    "grade": "5th",
+    "tickets": 2
+  },
+  {
+    "id": 231,
+    "firstName": "Olivia",
+    "lastName": "Shors",
+    "teacher": "Muldorf",
+    "grade": "1st",
+    "tickets": 2
+  },
+  {
+    "id": 232,
+    "firstName": "Arvin",
+    "lastName": "Tran",
+    "teacher": "\"Lopez",
+    "grade": "2",
+    "tickets": 0
+  },
+  {
+    "id": 233,
+    "firstName": "Ashton",
+    "lastName": "Tran",
+    "teacher": "Osborne",
+    "grade": "5th",
+    "tickets": 2
+  },
+  {
+    "id": 234,
+    "firstName": "Haley",
+    "lastName": "Vu",
+    "teacher": "Mishler",
+    "grade": "3rd",
+    "tickets": 2
+  },
+  {
+    "id": 235,
+    "firstName": "Roland",
+    "lastName": "Vu",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 2
+  },
+  {
+    "id": 236,
+    "firstName": "Evan",
+    "lastName": "Nguyen",
+    "teacher": "Mishler",
+    "grade": "3rd",
+    "tickets": 1
+  },
+  {
+    "id": 237,
+    "firstName": "Zoe",
+    "lastName": "Nguyen",
+    "teacher": "Moore",
+    "grade": "5th",
+    "tickets": 1
+  },
+  {
+    "id": 238,
+    "firstName": "Hannah",
+    "lastName": "Tran",
+    "teacher": "Mishler",
+    "grade": "3rd",
+    "tickets": 1
+  },
+  {
+    "id": 239,
+    "firstName": "Huber",
+    "lastName": "Tran",
+    "teacher": "Manthorne",
+    "grade": "TK",
+    "tickets": 1
+  },
+  {
+    "id": 240,
+    "firstName": "Nathan",
+    "lastName": "Vo",
+    "teacher": "Martone",
+    "grade": "1st",
+    "tickets": 1
+  },
+  {
+    "id": 241,
+    "firstName": "Jordan",
+    "lastName": "Navarro",
+    "teacher": "Githens",
+    "grade": "K",
+    "tickets": 1
+  },
+  {
+    "id": 242,
+    "firstName": "Kaitlyn",
+    "lastName": "Navarro",
+    "teacher": "House",
+    "grade": "4th",
+    "tickets": 1
+  },
+  {
+    "id": 243,
+    "firstName": "Dylan",
+    "lastName": "Hornaman",
+    "teacher": "Muldorf",
+    "grade": "1st",
+    "tickets": 1
+  },
+  {
+    "id": 244,
+    "firstName": "Ashton",
+    "lastName": "Nguyen",
+    "teacher": "Muldorf",
+    "grade": "1st",
+    "tickets": 1
+  },
+  {
+    "id": 245,
+    "firstName": "Aubrey",
+    "lastName": "Nguyen",
+    "teacher": "Carr",
+    "grade": "2nd",
+    "tickets": 1
+  },
+  {
+    "id": 246,
+    "firstName": "Casper",
+    "lastName": "Tafoya",
+    "teacher": "Tucker",
+    "grade": "2nd",
+    "tickets": 1
+  }
 ];
 
 // --- Data structures -------------------------------------------------------

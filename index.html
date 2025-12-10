@@ -44,14 +44,28 @@
 
       <!-- Pac-Man loading animation -->
       <div id="loadingWrapper" class="loading-wrapper hidden">
-        <div class="pacman">
-          <div class="pacman-top"></div>
-          <div class="pacman-bottom"></div>
-          <div class="pacman-dot"></div>
-        </div>
+      <!-- Use your own GIF here -->
+        <img
+          id="loadingGif"
+          src="waiting.gif"
+          alt="Picking a winner..."
+        />
         <span>Picking a winner...</span>
+      
+        <!--
+          If you ever want to go back to the Pac-Man animation,
+               <!-- <div id="loadingWrapper" class="loading-wrapper hidden">
+            <div class="pacman">
+              <div class="pacman-top"></div>
+              <div class="pacman-bottom"></div>
+              <div class="pacman-dot"></div>
+            </div>
+            <span>Picking a winner...</span>
+          </div> -->
+        -->
       </div>
 
+      
       <div id="winnerDisplay" class="winner-display empty">
         <p>No winner picked yet.</p>
       </div>

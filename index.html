@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jog-a-thon Raffle Picker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>Jog-a-thon Raffle Picker</h1>
+      <p>Upload the CSV, then draw winners raffle-style or for the grand prize.</p>
+    </header>
+
+    <section class="card">
+      <h2>1. Load Participants</h2>
+      <p class="small">
+        Expected columns (in any order):
+        <strong>first name</strong>, <strong>last name</strong>, <strong>teacher</strong>,
+        <strong>grade</strong>, <strong>raffle tickets</strong>
+      </p>
+
+      <label class="file-input-label">
+        <input type="file" id="csvInput" accept=".csv" />
+        <span>Select CSV file</span>
+      </label>
+      <p id="loadStatus" class="status-text">No data loaded yet.</p>
+    </section>
+
+    <section class="card">
+      <div class="mode-row">
+        <h2>2. Draw Winners</h2>
+        <div class="mode-indicator">
+          Mode: <span id="modeLabel">Raffle (weighted by tickets)</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="drawButton" disabled>🎟️ Draw Winner</button>
+        <button id="resetGrandButton" disabled>🏆 Reset for Grand Prize</button>
+        <button id="resetRaffleButton" disabled>🔄 Reset Raffle</button>
+      </div>
+
+      <!-- Pac-Man loading animation -->
+      <div id="loadingWrapper" class="loading-wrapper hidden">
+        <div class="pacman">
+          <div class="pacman-top"></div>
+          <div class="pacman-bottom"></div>
+          <div class="pacman-dot"></div>
+        </div>
+        <span>Picking a winner...</span>
+      </div>
+
+      <div id="winnerDisplay" class="winner-display empty">
+        <p>No winner picked yet.</p>
+      </div>
+
+      <div class="stats">
+        <div><strong>Participants:</strong> <span id="statsParticipants">0</span></div>
+        <div><strong>Tickets remaining (raffle):</strong> <span id="statsTickets">0</span></div>
+        <div><strong>Raffle winners:</strong> <span id="statsRaffleWinners">0</span></div>
+        <div><strong>Grand prize winners:</strong> <span id="statsGrandWinners">0</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. Winners</h2>
+      <div class="winners-columns">
+        <div>
+          <h3>Raffle Winners</h3>
+          <ul id="raffleWinnersList" class="winner-list"></ul>
+        </div>
+        <div>
+          <h3>Grand Prize Winners</h3>
+          <ul id="grandWinnersList" class="winner-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="app-footer">
+      <p class="small">
+        Tip: Export your spreadsheet as CSV and upload it above.
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

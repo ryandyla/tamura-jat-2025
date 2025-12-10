@@ -41,6 +41,7 @@ function updateStats() {
 function renderWinnerDisplay(participant, fromMode) {
   if (!participant) {
     winnerDisplay.classList.add("empty");
+    winnerDisplay.classList.remove("winner-highlight");
     winnerDisplay.innerHTML = "<p>No winner picked yet.</p>";
     return;
   }
@@ -50,6 +51,10 @@ function renderWinnerDisplay(participant, fromMode) {
   const teacherGrade = `${participant.teacher || "Unknown teacher"} • ${
     participant.grade || "Unknown grade"
   }`;
+  // Trigger a little pop animation each time a winner is shown
+  winnerDisplay.classList.remove("winner-highlight");
+  void winnerDisplay.offsetWidth; // force reflow so animation can restart
+  winnerDisplay.classList.add("winner-highlight");
 
   winnerDisplay.innerHTML = `
     <div>
